@@ -1,0 +1,269 @@
+/* Reset some default styles */
+/*Nav Bar*/
+
+/* CSS for the navigation bar */
+
+/* Fonts------------------------------------------------------------------------------------------------------------- */
+@font-face {
+    font-family: bangers-regular;
+    src: url(fonts/Bangers-Regular.ttf);
+}
+    
+@font-face {
+    font-family: permanent-marker;
+    src: url(fonts/PermanentMarker-Regular.ttf);
+
+}    
+
+@font-face {
+    font-family: special-elite;
+    src: url(fonts/SpecialElite-Regular.ttf);
+}
+
+@font-face {
+    font-family: luckiest-guy;
+    src: url(fonts/LuckiestGuy-Regular.ttf);
+}
+
+@font-face {
+    font-family: silkscreen-bold;
+    src: url(fonts/Silkscreen-Bold.ttf);
+}
+
+@font-face {
+    font-family: silkscreen-regular;
+    src: url(fonts/Silkscreen-Regular.ttf);
+}
+
+@font-face {
+    font-family: protest-guerilla;
+    src: url(fonts/ProtestGuerrilla-Regular.ttf);
+}
+
+/* Nav bar----------------------------------------------------------------------------------------------*/
+
+.navbar {
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    font-family: silkscreen-regular;
+    color: rgb(255, 255, 3);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar-left li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.subscribe-form {
+    display: flex;
+    align-items: right; /* Align items vertically */
+   
+}
+
+.subscribe-form input {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.subscribe-form-button {
+    padding: 5px 10px;
+    background-color: #000000;
+  
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-right {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+}
+
+
+#subscribe-button {
+    font-family: silkscreen-regular;
+    font-size: 20px;
+}
+
+
+
+
+
+
+/*Main Page------------------------------------------------------------------------------------------------------------------*/
+
+.head{
+    text-align: center;
+    font-size:100px;
+    font-style: oblique;
+    color: rgb(255, 255, 3);
+    font-family: silkscreen-regular;
+}
+body {
+    background-color: #000; /* Set the background color to black */
+    color: rgb(255, 255, 3); /* Set text color to white for better contrast */
+}
+
+/* Title ----------------------------------------------------------------------------------------------------------------------*/
+
+.main-page.title{
+    font-family: silkscreen-regular;
+    font-weight: bold;
+}
+
+.newsletter {
+    display: flex;
+    font-family: silkscreen-regular;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.day {
+    flex: 1 0 calc(50% - 20px); /* Two days per row, adjust width as needed */
+    margin-bottom: 40px; /* Adjust margin between days */
+}
+
+.article-group {
+    display: flex; /* Use flexbox to align articles */
+    justify-content: space-around; /* Distribute space evenly between articles */
+    margin-bottom: 20px; /* Add margin between article groups */
+}
+
+.article {
+    flex:auto; /* Make each article take up equal space */
+    max-width: calc(50% - 10px); /* Set max-width for each article */
+    margin: 0 5px; /* Add margin between articles */
+}
+
+.article img {
+    width: 250px;
+    height: 150px;
+}
+
+
+.article p {
+    font-family:silkscreen-regular;
+    font-size: 10px;
+    color: rgb(255, 255, 3);
+    margin-top: 5px; /* Add spacing between image and caption */
+}
+
+/* Team ------------------------------------------------------------------------------------------------------------------------- */
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+   
+ 
+}
+
+.flex-item {
+    flex: 0 0px calc(50% - 20px); /* Set the width of each flex item to 50% with some margin */
+    margin: 120px 5px ; /* Add margin around each flex item */
+    font-family: silkscreen-regular;
+    color: rgb(255, 255, 3);
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+    
+}
+.content-container {
+    text-align: center;
+}
+
+
+
+.content-container p {
+    margin-top: 10px; /* Adjust spacing between image and text */
+
+    
+}
+
+.small-image {
+    width: 200px; /* Set the desired width for the image */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+
+/* Footer----------------------------------------------------------------------------------------------------------------------*/
+
+footer {
+    background-color: #000000; /*background color */
+    font-family: silkscreen-regular;
+    padding: 20px; /* Add padding to provide spacing */
+    color: rgb(255, 255, 3); /* Text color */
+    text-align: center; /* Center-align text */
+}
+
+/* Coming Soon -------------------------------------------------------------------------------------------------------------- */
+
+.soon{
+    font-family: silkscreen regular;
+    text-align: center;
+}
+
+/* Spaces ---------------------------------------------------------------------------------------------------------------------*/
+
+.flex-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+
+.top-row, .bottom-row {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+}
+
+
+.space-day{
+    font-family: silkscreen-regular;
+    text-align: center;
+    color: rgb(255, 255, 3);
+    font-size: 10px;
+
+}
+
+.space-day img{
+    width: 300px;
+    height: 100px;
+    margin: 20px;
+}
+
+/* About -------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.prepare{
+    font-family: silkscreen-regular;
+    text-align: center;
+    color: rgb(255, 255, 3);
+    font-size: 10px;
+}
+
+/* Archives ------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.archives{
+    font-family: silkscreen-regular;
+    color: rgb(255, 255, 3);
+    font-size: 10px;
+}
